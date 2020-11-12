@@ -23,6 +23,7 @@ var icons = new Array(words.length);
 var clauses = [];
 
 const express = require('express');
+
 const app = express();
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
@@ -30,6 +31,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const path = require('path');
 const kuromoji = require('kuromoji');
+require('dotenv').config();
 
 
 
