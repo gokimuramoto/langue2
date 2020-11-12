@@ -79,7 +79,7 @@ app.post('/input', (req, res) => {
 
   setTimeout(function () { 
     delaySum = Math.ceil(delaySum / words.length);
-    res.render('index.ejs', { text1: link1, text2: link2, tweetsText: tweet_text, words: words, delayAve: delaySum, icons: icons }); },  3000);
+    res.render('index.ejs', { text1: link1, text2: link2, tweetsText: tweet_text, words: words, delayAve: delaySum, icons: icons }); },  5000);
 
 
 });
