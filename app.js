@@ -38,17 +38,6 @@ require('dotenv').config();
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  for (let i = 0; i < words.length; i++) {
-    tasks.push(exampleFunc(i).then(res => sum[i] = (res)))
-  }
-  
-  Promise.all(tasks).then(result => {
-    // resultは上記apiのレスポンスの配列
-    // 上記の場合は、レスポンスがない為、undefinedが詰まった配列になる
-    // console.log(result);
-    tweet_text = sum
-    console.log(tweet_text)
-  })
   //var words = ["昼が", "夜に", "昇華する", "とき", "夕焼", "雲の", "むこうに", "私は", "ひとつの", "世界を", "見る"];
   //console.log(tweets.statuses[0]);
   //delaySum = 0;
@@ -113,7 +102,17 @@ for (i = 0; i < 2; i++) {
 var tasks = []
 var sum = []
 
+for (let i = 0; i < words.length; i++) {
+  tasks.push(exampleFunc(i).then(res => sum[i] = (res)))
+}
 
+Promise.all(tasks).then(result => {
+  // resultは上記apiのレスポンスの配列
+  // 上記の場合は、レスポンスがない為、undefinedが詰まった配列になる
+  // console.log(result);
+  tweet_text = sum
+  console.log(tweet_text)
+})
 
 function exampleFunc(index) {
   return new Promise((resolve, reject) => {
