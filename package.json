@@ -1,0 +1,21 @@
+{
+  "name": "list-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "kuromoji": "^0.1.2",
+    "node-cron": "^2.0.3",
+    "nodemon": "^2.0.4",
+    "twitter": "^1.7.1"
+  }
+}
