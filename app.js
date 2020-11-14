@@ -66,9 +66,9 @@ app.post('/input', (req, res) => {
           words[words.length - 1] += parsed[i].surface_form;
         }
       }
-      if(words.length > 4){
+      if(words.length > 10){
         words=[]; 
-        words=["文節が","過剰です","ごめんなさい"]; 
+        words=["言葉が","長いです","ごめんなさい"]; 
         console.log("kiteru");
         
       }
