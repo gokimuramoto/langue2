@@ -72,6 +72,7 @@ app.post('/input', (req, res) => {
         console.log("kiteru");
         
       }
+      console.log(words)
       var sum = []
       var delays = [];
       for (let i = 0; i < words.length; i++) {
@@ -85,7 +86,7 @@ app.post('/input', (req, res) => {
         for (let i = 0; i < words.length; i++) {
           delaySum += delays[i]
         }
-        // console.log(tweet_text)
+        console.log(tweet_text)
       })
     })
 
