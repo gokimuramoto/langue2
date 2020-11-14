@@ -68,7 +68,7 @@ app.post('/input', (req, res) => {
       }
       if(words.length > 4){
         words=[]; 
-        words=["文節数が","過剰です","ごめんなさい"]; 
+        words=["文節が","過剰です","ごめんなさい"]; 
         console.log("kiteru");
         
       }
