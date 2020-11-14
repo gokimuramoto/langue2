@@ -70,7 +70,7 @@ app.post('/input', (req, res) => {
         words=[]; 
         words=["文節数が","過剰です","ごめんなさい"]; 
         console.log("kiteru");
-        return
+        
       }
       var sum = []
       var delays = [];
