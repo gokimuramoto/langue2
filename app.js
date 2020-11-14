@@ -66,7 +66,10 @@ app.post('/input', (req, res) => {
           words[words.length - 1] += parsed[i].surface_form;
         }
       }
+      if(words.length > 10){
 
+        words=["文節数が","過剰です","ごめんなさい"]; 
+      }
       var sum = []
       var delays = [];
       for (let i = 0; i < words.length; i++) {
