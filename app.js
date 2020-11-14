@@ -66,8 +66,8 @@ app.post('/input', (req, res) => {
           words[words.length - 1] += parsed[i].surface_form;
         }
       }
-      if(words.length > 10){
-
+      if(words.length > 4){
+        words=[]; 
         words=["文節数が","過剰です","ごめんなさい"]; 
       }
       var sum = []
